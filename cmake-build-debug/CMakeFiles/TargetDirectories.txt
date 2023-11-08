@@ -1,0 +1,4 @@
+/Users/charliewadds/CLionProjects/OS_ASMT2/cmake-build-debug/CMakeFiles/OS_ASMT2.dir
+/Users/charliewadds/CLionProjects/OS_ASMT2/cmake-build-debug/CMakeFiles/testMain.dir
+/Users/charliewadds/CLionProjects/OS_ASMT2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/charliewadds/CLionProjects/OS_ASMT2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
