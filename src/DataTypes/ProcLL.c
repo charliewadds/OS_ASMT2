@@ -19,7 +19,7 @@ ProcessLL* createProcLL(void) {
 //TODO test this, double check that it should return a ProcLL* not a ProcessLNode*
 ProcessLL* llAddProc(ProcessLL* list, Process* proc) {
     ProcessLNode *newProc = malloc(sizeof(ProcessLNode));
-    newProc->proc = *proc;
+    newProc->proc = proc;
     newProc->next = NULL;
     newProc->prev = NULL;
 
@@ -49,3 +49,40 @@ ProcessLNode* llProcPop(ProcessLL* list) {
     list->size--;
     return temp;
 }
+
+
+//TODO test this
+void llProcPush(ProcessLL* list, ProcessLNode* node) {
+    if (list->head == NULL) {
+        list->head = node;
+        list->tail = node;
+        list->size++;
+        return;
+    }
+
+    list->tail->next = node;
+    node->prev = list->tail;
+    list->tail = node;
+    list->size++;
+
+}
+
+//TODO test this
+ProcessLNode* llProcPeek(ProcessLL* list) {
+    return list->head;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

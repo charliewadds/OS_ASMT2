@@ -58,6 +58,18 @@ build CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcLL.c.o: C_COMPILER__OS_ASMT2_Deb
   OBJECT_DIR = CMakeFiles/OS_ASMT2.dir
   OBJECT_FILE_DIR = CMakeFiles/OS_ASMT2.dir/src/dataTypes
 
+build CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcQueue.c.o: C_COMPILER__OS_ASMT2_Debug /Users/charliewadds/CLionProjects/OS_ASMT2/src/dataTypes/ProcQueue.c || cmake_object_order_depends_target_OS_ASMT2
+  DEP_FILE = CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcQueue.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/OS_ASMT2.dir
+  OBJECT_FILE_DIR = CMakeFiles/OS_ASMT2.dir/src/dataTypes
+
+build CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcWaitQueue.c.o: C_COMPILER__OS_ASMT2_Debug /Users/charliewadds/CLionProjects/OS_ASMT2/src/dataTypes/ProcWaitQueue.c || cmake_object_order_depends_target_OS_ASMT2
+  DEP_FILE = CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcWaitQueue.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/OS_ASMT2.dir
+  OBJECT_FILE_DIR = CMakeFiles/OS_ASMT2.dir/src/dataTypes
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target OS_ASMT2
@@ -66,7 +78,7 @@ build CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcLL.c.o: C_COMPILER__OS_ASMT2_Deb
 #############################################
 # Link the static library libOS_ASMT2.a
 
-build libOS_ASMT2.a: C_STATIC_LIBRARY_LINKER__OS_ASMT2_Debug CMakeFiles/OS_ASMT2.dir/src/utils.c.o CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcLL.c.o
+build libOS_ASMT2.a: C_STATIC_LIBRARY_LINKER__OS_ASMT2_Debug CMakeFiles/OS_ASMT2.dir/src/utils.c.o CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcLL.c.o CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcQueue.c.o CMakeFiles/OS_ASMT2.dir/src/dataTypes/ProcWaitQueue.c.o
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/OS_ASMT2.dir

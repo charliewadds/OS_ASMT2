@@ -5,7 +5,11 @@ set(CMAKE_C_STANDARD 99)
 
 add_library(OS_ASMT2 src/utils.c)
 
-target_sources(OS_ASMT2 PRIVATE src/dataTypes/ProcLL.c)
+target_sources(OS_ASMT2 PRIVATE
+        src/dataTypes/ProcLL.c
+        src/dataTypes/ProcQueue.c
+        src/dataTypes/ProcWaitQueue.c
+        )
 # Create an executable for testing the library
 add_executable(testMain tests/testMain.c)
 
