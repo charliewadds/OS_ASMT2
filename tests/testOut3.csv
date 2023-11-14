@@ -1,0 +1,16 @@
+time of transition, pid, old state, new State
+time of transition: 0	pid: 1	old state: New	new state: Ready	
+time of transition: 0	pid: 1	old state: Ready	new state: Running	
+time of transition: 2	pid: 2	old state: New	new state: Ready	
+time of transition: 2	pid: 1	old state: Running	new state: Waiting	
+time of transition: 2	pid: 2	old state: Ready	new state: Running	
+time of transition: 4	pid: 3	old state: New	new state: Ready	
+time of transition: 5	pid: 1	old state: Waiting	new state: Ready	
+time of transition: 6	pid: 2	old state: Running	new state: Terminated	
+time of transition: 6	pid: 3	old state: Ready	new state: Running	
+time of transition: 8	pid: 3	old state: Running	new state: Terminated	
+time of transition: 8	pid: 1	old state: Ready	new state: Running	
+time of transition: 10	pid: 1	old state: Running	new state: Waiting	
+time of transition: 13	pid: 1	old state: Waiting	new state: Ready	
+time of transition: 13	pid: 1	old state: Ready	new state: Running	
+time of transition: 16	pid: 1	old state: Running	new state: Terminated	

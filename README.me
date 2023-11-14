@@ -1,0 +1,99 @@
+Kernel Simulator 
+
+
+#-----------------------------------------------------------------------------
+===================
+CONTACT INFORMATION
+___________________
+
+Contact Name:		Charlie Wadds, 10118114
+Affiliation: 		Carleton University - Systems and Computer Engineering
+
+#-----------------------------------------------------------------------------
+===========
+DESCRIPTION
+___________
+
+- Kernel Simulator is a program that generates an executable file that
+simulates a simple OS kernel, which can be used for performance analysis of
+various scheduling algorithms.
+
+- The application is composed of these files
+    - testMain.c
+    - osSimLib.h
+    - ProcLL.c
+    - procQueue.c
+    - procWaitQueue.c
+    - Schedulers.c
+    - utils.c
+
+#-----------------------------------------------------------------------------
+============
+INSTALLATION
+____________
+
+This program has only been tested for macOS sonoma 14.0 on ARM64 architecture.
+
+-------------------------- Installation Dependencies -------------------------
+
+The program requires C99 to run. The program was developed using the C99
+
+The program requires support for the following C libraries:
+    - stdio.h
+    - stdlib.h
+    - string.h
+    - stdint.h
+    - errno.h
+
+The program was developed and tested using CMAKE 3.23 although it should be able to be built using
+
+#-----------------------------------------------------------------------------
+=====
+USAGE
+_____
+
+
+in order to change the scheduler algorithm or toggle memory simulation on and off there are variable defined
+in ```osSimLib.h``` that can be changed to alter the behaviour of the program
+
+---------------------------- Generating Executable ---------------------------
+
+
+
+----------------------------- Creating Batch file ----------------------------
+
+
+
+---------------------------------- Input Data --------------------------------
+
+
+
+---------------------------------- Output Data --------------------------------
+
+
+#-----------------------------------------------------------------------------
+=======
+LICENSE
+_______
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Copyright (c) 2021 Evan Smedley
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

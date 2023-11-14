@@ -9,6 +9,8 @@ target_sources(OS_ASMT2 PRIVATE
         src/dataTypes/ProcLL.c
         src/dataTypes/ProcQueue.c
         src/dataTypes/ProcWaitQueue.c
+        src/Schedulers.c
+        src/memManage.c
         )
 # Create an executable for testing the library
 add_executable(testMain tests/testMain.c)

@@ -9,10 +9,10 @@
 #include <stdio.h>
 
 //TODO test this
-ProcessLNode *procPush(ProcQueue* queue, ProcessLNode * proc){
+ProcessLNode *procQueuePush(ProcQueue* queue, Process *proc){
 
     ProcessLNode *newProc = malloc(sizeof(ProcessLNode));
-    *newProc = *proc;
+    newProc->proc = proc;
     newProc->next = NULL;
     newProc->prev = NULL;
 
@@ -29,10 +29,11 @@ ProcessLNode *procPush(ProcQueue* queue, ProcessLNode * proc){
         queue->size++;
     }
 
-    return proc;
+
+    return newProc;
 }
 
-ProcessLNode *procPop(ProcQueue* queue){
+ProcessLNode *procQueuePop(ProcQueue* queue){
 
     //remove and return head
     if(queue->size == 0){
@@ -52,6 +53,17 @@ ProcessLNode *procPop(ProcQueue* queue){
         queue->head->next = NULL;
         queue->size--;
         return temp;
+    }
+}
+
+ProcessLNode *procQueuePeek(ProcQueue* queue){
+    //return head
+    if(queue->size == 0){
+        printf("Queue is empty\n");
+        return NULL;
+    }
+    else{
+        return queue->head;
     }
 }
 

@@ -1,0 +1,4 @@
+time of transition, pid, old state, new State,mem
+time of transition: 0	pid: 1	old state: New	new state: Ready	
+time of transition: 2	pid: 2	old state: New	new state: Ready	
+time of transition: 4	pid: 3	old state: New	new state: Ready	
